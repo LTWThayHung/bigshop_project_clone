@@ -1,3 +1,0 @@
-INDEX VERSION 1.131
-file:/E:/Code/ID/WorkSp/WP/bigshop_project2/Project/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index
-meta_index

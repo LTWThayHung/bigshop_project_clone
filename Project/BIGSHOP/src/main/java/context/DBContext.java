@@ -26,25 +26,25 @@ public class DBContext {
 //	        
 //	        return connection;
 //	    }
-	public Connection getConnection() {
-        Connection connection = null;
-        String url = "jdbc:sqlserver://DESKTOP-J8TUGI3:1433;databaseName=Big_store_1;encrypt=false";
-        String user = "sa";
-        String password = "123";
-
-        try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-            connection = DriverManager.getConnection(url, user, password);	
-        } catch (ClassNotFoundException e) {
-            System.out.println("Không tìm thấy driver cần thiết!");
-            e.printStackTrace();
-        } catch (SQLException e) {
-            System.out.println("Kết nối thất bại!");
-            e.printStackTrace();
-        }
-        
-        return connection;
-    }
+//	public Connection getConnection() {
+//        Connection connection = null;
+//        String url = "jdbc:sqlserver://DESKTOP-J8TUGI3:1433;databaseName=Big_store_1;encrypt=false";
+//        String user = "sa";
+//        String password = "123";
+//
+//        try {
+//            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+//            connection = DriverManager.getConnection(url, user, password);	
+//        } catch (ClassNotFoundException e) {
+//            System.out.println("Không tìm thấy driver cần thiết!");
+//            e.printStackTrace();
+//        } catch (SQLException e) {
+//            System.out.println("Kết nối thất bại!");
+//            e.printStackTrace();
+//        }
+//        
+//        return connection;
+//    }
 
 //	    public static void main(String[] args) {
 //	        Connection conn = DBContext.getConnection();

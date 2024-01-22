@@ -149,16 +149,14 @@ function hideURLbar(){ window.scrollTo(0,1); }
 					</div>
 					<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 						<ul class="nav navbar-nav ">
-							<li ><a href="index.jsp" class="hyper "><span>Home</span></a></li>
-
-							<li><a href="kitchen.jsp" class=" hyper"><span>Kitchen</span></a>
+							 <li class=""><a href="<%=request.getContextPath()%>" class="hyper "><span>Home</span></a></li> 
+							
+							<c:forEach items= "${listAllCategory}" var = "c"> 
+							
+							<li class="<%-- ${tag == c.cid ? 'active' : '' } --%>"><a href="category?cid=${c.cid}" class=" hyper"><span>${c.cname}</span></a>
 							</li>
-							<li><a href="care.jsp" class=" hyper"><span>
-										Personal Care </span></a></li>
-							<li><a href="hold.jsp" class=" hyper"><span>Household</span></a>
-							</li>
-
-
+							
+							</c:forEach>
 							<li><a href="contact.jsp" class="hyper"><span>Contact
 										Us</span></a></li>
 						</ul>
